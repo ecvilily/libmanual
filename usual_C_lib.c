@@ -50,7 +50,7 @@ int setvbuf(FILE *stream, char *buffer, int mode, size_t size)
 
 FILE *tmpfile(void)
 char *tmpnam(char *str)
-
+//字符串
 int fprintf(FILE *stream, const char *format, ...)
 int printf(const char *format, ...)
 int sprintf(char *str, const char *format, ...)
@@ -62,20 +62,19 @@ int fscanf(FILE *stream, const char *format, ...)
 int scanf(const char *format, ...)
 int sscanf(const char *str, const char *format, ...)
 
-int fgetc(FILE *stream)
-int fputc(int char, FILE *stream)
-
 char *fgets(char *str, int n, FILE *stream)
 int fputs(const char *str, FILE *stream)
 void perror(const char *str)
-
+//
+//字符  不能和上面的一起用
+int fgetc(FILE *stream)
+int fputc(int char, FILE *stream)
 int getc(FILE *stream)
 int putc(int char, FILE *stream)
 int ungetc(int char, FILE *stream)
-
 int getchar(void)
 int putchar(int char)
-
+//
 
 EXIT_FAILURE EXIT_SUCCESS
 
